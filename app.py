@@ -11,7 +11,7 @@ app = Flask(__name__)
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 app.config['JSON_SORT_KEYS'] = False
-app.config['JWT_SECRET_KEY'] = 'Lelo_318318'  # Change this!
+app.config['JWT_SECRET_KEY'] = 'Lelo_318318'
 jwt = JWTManager(app)
 
 app.register_blueprint(name_blueprint)
